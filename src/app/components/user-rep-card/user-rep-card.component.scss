@@ -1,0 +1,71 @@
+@import "../../../assets/styles/variables";
+
+.card-body {
+  padding: 0rem 1rem;
+}
+
+.card-title {
+  margin-top: 0.4rem;
+  font: 24px Roboto-Regular;
+  color: $white;
+  text-align: center;
+  @media only screen and (max-width: 992px) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 6px;
+  }
+}
+
+.card {
+  margin-bottom: 40px;
+}
+
+.card-num {
+  color: $white;
+}
+
+.bg-clr-dark-blue {
+  background-color: $dark-blue;
+}
+
+.bg-clr-blue {
+  background-color: $blue;
+}
+
+.bg-clr-faint-blue {
+  background-color: $faint-blue;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  .user-name {
+    display: flex;
+    padding-top: 10px;
+    font: 24px Roboto-Regular;
+    color: $white;
+    justify-content: center;
+    @media only screen and (max-width: 992px) {
+      font-size: 12px;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 6px;
+    }
+  }
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 60px;
+    @media only screen and (max-width: 992px) {
+      height: 52px;
+    }
+    @media only screen and (max-width: 480px) {
+      height: 40px;
+    }
+  }
+}

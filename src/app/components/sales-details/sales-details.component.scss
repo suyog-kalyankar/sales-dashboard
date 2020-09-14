@@ -1,0 +1,33 @@
+@import "../../../assets/styles/variables";
+
+.sales-col-header {
+  font: 12px Roboto-Medium;
+  color: $dark;
+}
+
+.sales-data {
+  font: 12px Roboto-Regular;
+  color: $dark;
+}
+
+.thead, tbody, tfoot, tr, td, th {
+    border-color: $gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $light-gray;
+}
+
+.details-header{
+    font: 24px Roboto-Regular;
+    color: $dark;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.thead, tbody, tfoot, tr, td:first-child, th:first-child {
+    padding-left: 20px;
+}

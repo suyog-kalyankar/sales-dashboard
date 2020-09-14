@@ -1,0 +1,25 @@
+<div class="table-responsive bg-white">
+  <p class="details-header">Details</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th *ngFor="let col of displayedColumns" class="sales-col-header">{{col}}</th>
+      </tr>
+    </thead>
+    <tbody class="sales-data">
+      <tr *ngFor="let val of saledDataSource" [ngClass]="{'bg-clr-green' : val.engagementStatus ==='Won',
+        'bg-clr-red' : val.engagementStatus ==='Lost'}">
+        <td>{{val.salesRep}}</td>
+        <td>{{val.date}}</td>
+        <td>{{val.client}}</td>
+        <td>{{val.primaryContactPerson}}</td>
+        <td>{{val.title}}</td>
+        <td>{{val.vertical}}</td>
+        <td>{{val.meetingLocation}}</td>
+        <td>{{val.purposeOfInteraction}}</td>
+        <td class="width-14">{{val.outcomeAndRemarks}}</td>
+        <td>{{val.engagementStatus}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

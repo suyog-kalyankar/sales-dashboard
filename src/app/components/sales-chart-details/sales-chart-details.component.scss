@@ -1,0 +1,60 @@
+@import "../../../assets/styles/variables";
+
+.funnel {
+  width: 100%;
+  height: auto;
+}
+
+.user-div {
+  width: 70%;
+  height: auto;
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+.arrow-img {
+  height: 5px;
+  padding-left: 10px;
+}
+
+.funnel-container {
+  position: relative;
+  text-align: center;
+  color: $white;
+}
+.level {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.level-1 {
+  top: 9%;
+}
+.level-2 {
+  top: 24%;
+}
+.level-3 {
+  top: 39%;
+}
+.level-4 {
+  top: 54%;
+}
+.level-5 {
+  top: 69%;
+}
+.level-6 {
+  top: 85%;
+}
+
+.nav-link-block {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.txt-normal{
+  text-transform: capitalize;
+}

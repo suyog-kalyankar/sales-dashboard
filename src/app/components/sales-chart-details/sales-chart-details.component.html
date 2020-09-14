@@ -1,0 +1,91 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-20 padding-r-0 padding-t-0 row">
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9  float-left">
+        <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-xs navbar-expand-md bg-white">
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <a class="nav-link txt-normal">All Sales Reps
+                        <img class="arrow-img" src="assets/images/ico-down-arrow.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-align-right">
+        <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-xs navbar-expand-md bg-white">
+            <ul class="navbar-nav mr-auto width-100">
+                <li class="nav-link-block" [routerLinkActive]="'router-link-active'">
+                    <a [routerLink]="TOP" class="nav-link">Top</a>
+                </li>
+                <li class="nav-link-block" [routerLinkActive]="'router-link-active'">
+                    <a class="nav-link">Bottom</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-20 padding-r-0 row">
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9  float-left">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8  float-left padding-r-20">
+            <div class="funnel-container">
+                <img alt="Locusnine-Logo" src="assets/images/funnel.png" class="funnel img-responsive">
+                <!-- <div class="div2">
+                    <div class="funnel-block">
+                        <span class="funnel-prop">Lead In</span><br>
+                        <span class="funnel-value">25</span>
+                    </div>
+                    <div class="funnel-block">
+                        <span class="funnel-prop">Contact Made</span><br>
+                        <span class="funnel-value">18</span>
+                    </div>
+                    <div class="funnel-block">
+                        <span class="funnel-prop">Needs Defined</span><br>
+                        <span class="funnel-value">12</span>
+                    </div>
+                    <div class="funnel-block">
+                        <span class="funnel-prop">Proposal Made</span><br>
+                        <span class="funnel-value">8</span>
+                    </div>
+                    <div class="funnel-block">
+                        <span class="funnel-prop">Negotiations Started</span><br>
+                        <span class="funnel-value">5</span>
+                    </div>
+                    <div class="funnel-block">
+                        <span class="funnel-value">Won</span><br>
+                        <span class="funnel-value">3</span>
+                    </div>
+                </div> -->
+                <div class="level level-1">
+                    <div class="small-font">Lead In</div>
+                    <div class="big-font">25</div>
+                </div>
+                <div class="level level-2">
+                    <div class="small-font">Contact Made</div>
+                    <div class="big-font">18</div>
+                </div>
+                <div class="level level-3">
+                    <div class="small-font">Needs Defined</div>
+                    <div class="big-font">12</div>
+                </div>
+                <div class="level level-4">
+                    <div class="small-font">Proposal Made</div>
+                    <div class="big-font">8</div>
+                </div>
+                <div class="level level-5">
+                    <div class="small-font">Negotiations Started</div>
+                    <div class="big-font">5</div>
+                </div>
+                <div class="level level-6">
+                    <div class="big-font">WON</div>
+                    <div class="big-font">3</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 float-right sales-detail-wrapper">
+            <app-sales-rep-cards></app-sales-rep-cards>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-align-right">
+        <app-user-rep-card></app-user-rep-card>
+    </div>
+</div>
